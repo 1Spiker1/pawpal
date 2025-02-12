@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PawPal - Servicii pentru Animale de Companie</title>
+    <style>
+        body {
+            font-family: 'Verdana', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLn2uwKzWQq5YSqeNIUZfHVH__eWm-xe54Qw&s') no-repeat center center fixed;
+            background-size: cover;
+            animation: fadeIn 2s;
+            color: #fff;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: rgba(0, 0, 0, 0.6);
+            padding: 10px 15px;
+            color: white;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+        }
+        .navbar img {
+            height: 60px;
+        }
+        .hero {
+            text-align: center;
+            color: white;
+            padding: 100px 20px;
+            background: rgba(0, 0, 0, 0.6);
+            margin-top: 60px;
+            border-bottom: 5px solid #fff;
+            background: url('https://wallup.net/wp-content/uploads/2018/09/30/181985-nature-sun-animals-dogs-puppies.jpg') no-repeat center center fixed;
+            background-size: cover;
+        }
+        .hero img {
+            width: 150px;
+            animation: slideIn 1.5s;
+        }
+        @keyframes slideIn {
+            from { transform: translateY(-50px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+        .content {
+            padding: 50px;
+            background: #fff;
+            text-align: center;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+            color: #333;
+        }
+        .services {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .service-box {
+            background: #f4f4f4;
+            padding: 20px;
+            border-radius: 10px;
+            width: 250px;
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .service-box:hover {
+            transform: scale(1.05);
+            box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2);
+        }
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.8);
+            color: white;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        .button-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .button-container button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px 32px;
+            border: none;
+            cursor: pointer;
+            margin: 10px;
+            font-size: 16px;
+            border-radius: 5px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s;
+        }
+        .button-container button:hover {
+            background-color: #45a049;
+            transform: translateY(-2px);
+        }
+        .section-title {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: #333;
+        }
+        .section-content {
+            margin: 20px 0;
+            font-size: 1.1em;
+            color: #555;
+        }
+        .service-box h3 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+            color: #333;
+        }
+        .service-box p {
+            font-size: 1.1em;
+            color: #777;
+        }
+        .hero-text {
+            font-size: 1.2em;
+            font-weight: lighter;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <img src="https://play-lh.googleusercontent.com/vsgyzW9D-kruEsakWuS7hDCM5IBJXE9064UA2YUZPeAYN9qe3Dmbt60Wbm121Qwswbk" alt="PawPal Logo">
+        <nav>
+            <a href="#despre">Despre Noi</a>
+            <a href="#servicii">Servicii</a>
+        </nav>
+    </div>
+    <div class="hero">
+        <img src="https://play-lh.googleusercontent.com/vsgyzW9D-kruEsakWuS7hDCM5IBJXE9064UA2YUZPeAYN9qe3Dmbt60Wbm121Qwswbk" alt="PawPal Logo">
+        <h2>Bine ai venit la PawPal</h2>
+        <p class="hero-text">Oferim cele mai bune servicii pentru animalele tale de companie!</p>
+    </div>
+    <div class="content" id="despre">
+        <h2 class="section-title">Despre Noi</h2>
+        <p class="section-content">Ne propunem să oferim servicii de dresaj și îngrijire pentru animalele de companie, contribuind astfel la bunăstarea lor și relaxarea stăpânilor.</p>
+    </div>
+    <div class="content" id="servicii">
+        <h2 class="section-title">Serviciile Noastre</h2>
+        <div class="services">
+            <div class="service-box">
+                <h3>Dresaj Canin</h3>
+                <p>Ședințe de dresaj pentru câini de toate rasele.</p>
+            </div>
+            <div class="service-box">
+                <h3>Plimbări Personalizate</h3>
+                <p>Plimbări și activități pentru câinele tău.</p>
+            </div>
+            <div class="service-box">
+                <h3>Îngrijire Animale</h3>
+                <p>Oferim servicii de îngrijire la domiciliu sau la angajat.</p>
+            </div>
+        </div>
+        <div class="button-container">
+            <button onclick="window.location.href='#plan'">Planul de Afaceri</button>
+            <button onclick="window.location.href='#misiune'">Misiunea și Obiectivele</button>
+            <button onclick="window.location.href='#detalii'">Detalii Angajați</button>
+        </div>
+    </div>
+    <div class="content" id="plan">
+        <h2 class="section-title">Planul de Afaceri</h2>
+        <p class="section-content">Afacerea noastră este concentrată pe dresajul animalelor de companie și oferirea unor servicii personalizate pentru îngrijirea acestora. Suntem dedicați unui serviciu de calitate, bazat pe respect și profesionalism.</p>
+    </div>
+    <div class="content" id="misiune">
+        <h2 class="section-title">Misiunea și Obiectivele</h2>
+        <p class="section-content">Misiunea noastră este de a contribui la dezvoltarea și educarea animalelor de companie, asigurându-ne că acestea sunt fericite și sănătoase. Obiectivul principal este de a crea relații de încredere între animale și stăpânii lor.</p>
+    </div>
+    <div class="content" id="detalii">
+        <h2 class="section-title">Detalii Angajați</h2>
+        <p class="section-content">Avem o echipă de profesioniști cu experiență vastă în domeniul îngrijirii și dresajului animalelor de companie. Fiecare membru al echipei este pasionat de animale și dedicat să ofere cele mai bune servicii.</p>
+    </div>	
+</body>
+</html>
