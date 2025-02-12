@@ -85,21 +85,17 @@
         }
         .footer {
             text-align: center;
-            padding: 10px;
+            padding: 20px;
             background: rgba(0, 0, 0, 0.8);
             color: white;
-            position: relative;
-            bottom: 0;
+            position: fixed;
             width: 100%;
-        }
-        .footer a {
-            color: white;
-            text-decoration: none;
-            font-size: 14px;
+            bottom: 0;
         }
         .button-container {
             text-align: center;
             margin-top: 20px;
+            padding-bottom: 80px; /* Adăugat pentru a face loc butonului fără a-l acoperi */
         }
         .button-container button {
             background-color: #4CAF50;
@@ -165,22 +161,36 @@
             <div class="service-box">
                 <h3>Dresaj Canin</h3>
                 <p>Ședințe de dresaj pentru câini de toate rasele.</p>
-                <p><strong>Tarif:</strong> 100 RON / sesiune</p>
             </div>
             <div class="service-box">
                 <h3>Plimbări Personalizate</h3>
                 <p>Plimbări și activități pentru câinele tău.</p>
-                <p><strong>Tarif:</strong> 50 RON / oră</p>
             </div>
             <div class="service-box">
                 <h3>Îngrijire Animale</h3>
                 <p>Oferim servicii de îngrijire la domiciliu sau la angajat.</p>
-                <p><strong>Tarif:</strong> 70 RON / oră</p>
             </div>
         </div>
         <div class="button-container">
-            <button onclick="window.location.href='https://1Spiker1.github.io/pawpal1/'">Mai multe detalii despre noi</button>
+            <button onclick="window.location.href='#plan'">Planul de Afaceri</button>
+            <button onclick="window.location.href='#misiune'">Misiunea și Obiectivele</button>
+            <button onclick="window.location.href='#detalii'">Detalii Angajați</button>
         </div>
+    </div>
+    <div class="content" id="plan">
+        <h2 class="section-title">Planul de Afaceri</h2>
+        <p class="section-content">Afacerea noastră este concentrată pe dresajul animalelor de companie și oferirea unor servicii personalizate pentru îngrijirea acestora. Suntem dedicați unui serviciu de calitate, bazat pe respect și profesionalism.</p>
+    </div>
+    <div class="content" id="misiune">
+        <h2 class="section-title">Misiunea și Obiectivele</h2>
+        <p class="section-content">Misiunea noastră este de a contribui la dezvoltarea și educarea animalelor de companie, asigurându-ne că acestea sunt fericite și sănătoase. Obiectivul principal este de a crea relații de încredere între animale și stăpânii lor.</p>
+    </div>
+    <div class="content" id="detalii">
+        <h2 class="section-title">Detalii Angajați</h2>
+        <p class="section-content">Avem o echipă de profesioniști cu experiență vastă în domeniul îngrijirii și dresajului animalelor de companie. Fiecare membru al echipei este pasionat de animale și dedicat să ofere cele mai bune servicii.</p>
+    </div>
+    <div class="button-container">
+        <button onclick="window.location.href='https://1Spiker1.github.io/pawpal1/'">Mai multe detalii despre noi</button>
     </div>
     <div class="footer">
         <p><strong>Echipa:</strong> Maga Sofia, Podovei Flavian, Amarandei Miruna, Sonohat Luca</p>
